@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  goToLinkedin(){
+    window.open("https://www.linkedin.com/in/jason-j-2698-j/", '_blank')
+  }
 }

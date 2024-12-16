@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,16 +9,18 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
-  openResume(){
+  constructor(private viewportScroller: ViewportScroller){}
 
+  openResume(){
+    window.open('/JASON-J-Resume.pdf')
   }
 
-  scrollTo(data:any){
-
+  scrollTo(data:string){
+    this.viewportScroller.scrollToAnchor(data)
   }
 
   goToLinkedin(){
-
+    window.open("https://www.linkedin.com/in/jason-j-2698-j/", '_blank')
   }
 
   goToGithub(){
