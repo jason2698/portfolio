@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class NavLinksComponent {
   constructor(private viewportScroller: ViewportScroller) {}
 
-  protected  navItems: string[] = ['About', 'Skill Set', 'Experience', 'Contacts'];
+  protected  navItems: string[] = ['About', 'Skill Set', 'Contacts'];
 
   scrollTo(section: string) {
     let elementId = section.toLowerCase().replace(' ', '-');

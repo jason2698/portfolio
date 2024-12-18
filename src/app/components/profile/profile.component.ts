@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  private phone : number = 8754372649;
+
   constructor(private viewportScroller: ViewportScroller){}
 
   openResume(){
@@ -23,7 +25,7 @@ export class ProfileComponent {
     window.open("https://www.linkedin.com/in/jason-j-2698-j/", '_blank')
   }
 
-  goToGithub(){
-    
+  goToPhone(){
+    window.location.href = 'tel:'+ this.phone;
   }
 }
