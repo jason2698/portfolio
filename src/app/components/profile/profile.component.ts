@@ -14,7 +14,7 @@ export class ProfileComponent {
   constructor(private viewportScroller: ViewportScroller){}
 
   openResume(){
-    window.open('/JASON-J-Resume.pdf')
+    window.open('JASON-J-Resume.pdf')
   }
 
   scrollTo(data:string){
