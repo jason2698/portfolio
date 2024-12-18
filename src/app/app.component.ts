@@ -4,10 +4,11 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, ProfileComponent,ContactComponent,AboutComponent, ExperienceComponent],
+  imports: [HeaderComponent, ProfileComponent,ContactComponent,AboutComponent, ExperienceComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
