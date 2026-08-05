@@ -3,9 +3,19 @@ a {
     text-decoration: none;
     text-decoration-color: whitesmoke;
     cursor: pointer;
-  
+
     &:hover {
       color: gray;
       text-decoration-color: rgb(181,181, 181);
     }
   }
+
+.contact-card {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+    }
+}

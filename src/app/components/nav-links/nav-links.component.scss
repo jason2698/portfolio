@@ -3,12 +3,12 @@ a {
     text-decoration: none;
     text-decoration-color: whitesmoke;
     cursor: pointer;
+    transition: color 200ms ease;
 
     &:hover {
-        color: gray;
+        color: rgb(53, 53, 53);
         text-decoration: underline;
         text-underline-offset: 1rem;
-        // text-decoration-color: rgb(181, 181, 181);
-        text-decoration-color: rgb(181, 181, 181);
+        text-decoration-color: #c9a227;
     }
 }

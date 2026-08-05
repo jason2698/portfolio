@@ -9,6 +9,8 @@ $border-color: rgb(53, 53, 53);
 $darkgrey-color: rgb(85, 85, 85);
 $hover-background: rgb(53, 53, 53);
 $decoration-color: rgb(181, 181, 181);
+$accent-color: #c9a227;
+$accent-light: #e3c46b;
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -40,10 +42,36 @@ section {
 
 .icon {
     color: $black-color;
+    transition: color 200ms ease, transform 200ms ease;
 }
 
 i.pointer {
     cursor: pointer;
+}
+
+i.pointer:hover,
+a:hover .icon {
+    color: $accent-color;
+    transform: scale(1.15);
+}
+
+/* Section heading accent */
+section h1.fw-bold {
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 56px;
+        height: 4px;
+        border-radius: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, $accent-color, $accent-light);
+    }
 }
 
 /* Buttons */
@@ -54,10 +82,13 @@ i.pointer {
     width: 10rem;
     border-radius: 2rem;
     border: $border-color 0.1rem solid;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 
     &:hover {
         cursor: pointer;
         color: $whitesmoke-color;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
     }
 }
 
