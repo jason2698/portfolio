@@ -15,10 +15,13 @@ interface ExperienceItem {
 export class ExperienceComponent {
 
   private experienceItems: ExperienceItem[] = [
-    {name: "MySQL", src: "/skills/mysql.png"},
+    {name: "MySQL", src: "skills/mysql.png"},
     {name: "Javascript", src: "skills/js.png"},
     {name: "Typescript", src: "skills/ts.png"},
     {name: "Angular", src: "skills/angular.png"},
+    {name: "RxJS", src: "skills/RxJS.svg"},
+    {name: "Node JS", src: "skills/node-js.svg"},
+    {name: "Express JS", src: "skills/express-js.svg"},
     {name: "HTML", src: "skills/html.png"},
     {name: "CSS", src: "skills/css.png"},
     {name: "Bootstrap", src: "skills/bootstrap.png"},

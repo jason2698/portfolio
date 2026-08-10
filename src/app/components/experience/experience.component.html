@@ -9,7 +9,7 @@
     <div class="experience-items">
         <div class="experience-slide">
             @for ( item of getExperience; track item.index ) {
-            <img [ngSrc]="item.src" [alt]="item.name" class="item-img" height="80" width="100" priority>
+            <img [ngSrc]="item.src" [alt]="item.name" [title]="item.name" class="item-img" height="80" width="100" priority>
             }
         </div>
     </div>
