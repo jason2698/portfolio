@@ -1,0 +1,16 @@
+#Just the label you'll see in GitHub's UI
+name : CI  
+
+# Trigger : Runs this whenever someone pushes to main
+on:
+    push:
+        branches: [main]
+
+#run-on: Ubuntu-latest - the machine type GitHub gives you.
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        # Steps - two steps : first actions/checkout@v4()
+        steps: 
+            - uses: actions/checkout@v4
+            - run : echo "Hello from GitHub Actions!"
